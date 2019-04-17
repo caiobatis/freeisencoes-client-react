@@ -1,0 +1,36 @@
+.header {
+  height: 560px;
+  background: rgb(221, 221, 221);
+  .navbar {
+    height: 80px;
+    background: rgb(130, 153, 167);
+    opacity: .5;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+}
+.about {
+  height: 500px;
+  background: #333
+}
+
+.socials {
+  height: 500px;
+  background: rgb(191, 193, 199)
+}
+
+.vehicle {
+  height: 500px;
+  background: #333
+}
+
+.contact {
+  height: 500px;
+  background: rgb(191, 193, 199)
+}
+
+.footer {
+  height: 200px;
+  background: rgb(223, 228, 231)
+}
