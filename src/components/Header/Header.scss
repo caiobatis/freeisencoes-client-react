@@ -1,0 +1,44 @@
+.header {
+  background: url('https://www.lauras-corner.com/wp-content/uploads/2018/03/are-you-confident-on-the-roads.jpg');
+  height: 560px;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: '';
+    background: #232c4b;
+    opacity: .77;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .nav {
+    position: fixed;
+    width: 100%;
+    .menu {
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 20px 0;
+        justify-content: flex-end;
+        li {
+          a {
+            padding: 12px 15px;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            &:hover {
+              background: #172141;
+            }
+          }
+        }
+      }
+    }
+  }
+  .helpnav {
+    height: 80px;
+  }
+}

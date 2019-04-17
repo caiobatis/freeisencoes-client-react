@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from './components/Header/Header'
 
 import styles from './app.scss'
 
@@ -6,10 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className={styles.header}>
-          <div className={styles.navbar}></div>
-          <div className={styles.masthead}></div>
-        </div>
+        <Header/>
         <div className={styles.steps}></div>
         <div className={styles.services}></div>
         <div className={styles.who}></div>
