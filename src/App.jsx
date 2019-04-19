@@ -104,10 +104,10 @@ class App extends Component {
                 >
                   <div className="icon">check</div>
                   <div className="title">
-                    <h4 className="h4">Tributos e Isenções</h4>
+                    <h4 className="h4">Laudo médico</h4>
                   </div>
                   <div className="description">
-                    <span className="span">O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                    <span className="span">O laudo médico credenciado pelo DETRAN é vital para a obtenção das isenções, sendo ele o comprovador do seu direito em todo o processo. Para mais informações, entre em contato conosco.</span>
                   </div>
                 </CardWithIcon>
               </div>
@@ -119,10 +119,10 @@ class App extends Component {
                 >
                   <div className="icon">check</div>
                   <div className="title">
-                    <h4 className="h4">Tributos e Isenções</h4>
+                    <h4 className="h4">Dispensa de rodízio</h4>
                   </div>
                   <div className="description">
-                    <span className="span">O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                    <span className="span">Autorização especial para a liberação do Rodízio Municipal, de veículos dirigidos por pessoas com deficiência ou por quem as transportem.</span>
                   </div>
                 </CardWithIcon>
               </div>
@@ -132,10 +132,10 @@ class App extends Component {
                 >
                   <div className="icon">check</div>
                   <div className="title">
-                    <h4 className="h4">Tributos e Isenções</h4>
+                    <h4 className="h4">cartão defis</h4>
                   </div>
                   <div className="description">
-                    <span className="span">O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                    <span className="span">O cartão DEFIS é uma autorização especial para estacionar o seu veículo em locais com zona azul ou reservado para pessoas com necessidades especiais, demarcadas com o Símbolo Internacional de Acesso. Tem validade de 5 anos.</span>
                   </div>
                 </CardWithIcon>
               </div>
