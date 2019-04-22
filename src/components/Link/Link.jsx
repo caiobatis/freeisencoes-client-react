@@ -8,6 +8,7 @@ const Link = props => {
   const buttonClass = classNames({
     [styles.full]: props.full,
     [styles.uppercase]: props.uppercase,
+    [props.className]: [props.className]
   })
 
   let content

@@ -10,7 +10,7 @@ const Header = props => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="brand">
+              <div className={styles.brand}>
                 <Logo
                   type={'white'}
                 />

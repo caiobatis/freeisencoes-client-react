@@ -7,9 +7,10 @@ const Logo = props => {
   return (
     <Link
       to={'/'}
+      className={styles.logoLink}
     >
       <div className={styles.logo}>
-        <></>
+        Free Isenções
       </div>
     </Link>
   )
