@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.scss'
 import Buttons from '../Buttons/Buttons';
+import Logo from '../Logo/Logo';
 
 const Header = props => {
   return (
@@ -10,7 +11,9 @@ const Header = props => {
           <div className="row">
             <div className="col-md-6">
               <div className="brand">
-                <img src='http://www.freeisencoes.com.br/images/logo-free-isencoes.png' alt=""/>
+                <Logo
+                  type={'white'}
+                />
               </div>
             </div>
             <div className="col-md-6">
