@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Header.scss'
-import Buttons from '../Buttons/Buttons';
-import Logo from '../Logo/Logo';
+import Buttons from '../Buttons/Buttons'
+import Logo from '../Logo/Logo'
 
 const Header = props => {
   return (
@@ -34,15 +34,17 @@ const Header = props => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="text-center">
-              <h2 className="h2">Veículo <b>0KM</b> com até <b>30%</b> de desconto</h2>
-              <Buttons
-                type="secundary"
-                border={true}
-                label="solicite seu orçamento"
-                uppercase={true}
-                link={'/'}
-              />
+            <div className={styles.headerContent}>
+              <div className="text-center">
+                <h2 className={styles.h2}>Veículo <b>0KM</b> com até <b>30%</b> de desconto</h2>
+                <Buttons
+                  type="secundary"
+                  border={true}
+                  label="solicite seu orçamento"
+                  uppercase={true}
+                  link={'/'}
+                />
+              </div>
             </div>
           </div>
         </div>

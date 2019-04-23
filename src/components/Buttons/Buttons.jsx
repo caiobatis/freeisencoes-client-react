@@ -1,14 +1,11 @@
 import React from 'react'
 import classNames from 'classnames'
+import Link from '../Link/Link'
 import styles from './Buttons.scss'
-
-const Link = props => {
-  return props.children
-}
 
 const Buttons = props => {
   
-  const buttonClass = classNames({
+  const buttonClass = classNames(styles.button, {
     [styles.full]: props.full,
     [styles[props.type]]: props.type,
     [styles.border]: props.border,
@@ -16,8 +13,11 @@ const Buttons = props => {
     [styles.uppercase]: props.uppercase,
   })
 
-  const content = <button className={buttonClass} type="submit">{props.label}</button>
-  return props.link ? <Link> {content} </Link> : content
+  const content = 
+    <button className={buttonClass} type="submit">
+      <span>{props.label}</span>
+    </button>
+  return props.link ? <Link to={props.link}> {content} </Link> : content
 }
 
 export default Buttons 

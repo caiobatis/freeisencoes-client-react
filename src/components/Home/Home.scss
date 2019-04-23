@@ -1,0 +1,54 @@
+.why {
+  padding: 3em 0;
+  .h2 {
+    font-weight: 200;
+  }
+  .icons {
+    padding: 2em 0;
+    
+    [class*=container] {
+      position: relative;
+      &:before {
+        content: '';
+        width: 80%;
+        height: 2px;
+        background: rgb(207, 209, 214);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: 10%;
+      }
+    }
+
+    [class*=cardWithIcon] {
+      align-items: center;
+      padding: 10px;
+      background: #fff;
+
+      .icon {
+        height: 130px;
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background: #ccc;
+      }
+      .title {
+        margin: 15px 0 0;
+        .h4 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+      .description {
+        text-align: center;
+        .span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

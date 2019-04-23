@@ -5,8 +5,7 @@ import styles from './Cards.scss'
 const CardWithIcon = props => {
   
   const cardWithIcon = classNames(styles.cardWithIcon, {
-    [styles.shadow]: props.shadow,
-    [styles[props.padding]]: props.padding,
+    [styles.shadow]: props.shadow
   })
 
 
