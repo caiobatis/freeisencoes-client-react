@@ -146,11 +146,11 @@ class Routes extends Component {
             <div class="powr-social-feed" id="230093b0_1555424118"></div>
           </div>
           <div className="container">
-            <div className="flex">
-              <h4 className="h4">curta no face</h4>
-              <div className="icon"></div>
-              <div className="icon"></div>
-              <h4 className="h4">curta no insta</h4>
+            <div className={styles.flex}>
+              <h4 className={styles.h4}>curta no face</h4>
+              <div className={styles.icon}></div>
+              <div className={styles.icon}></div>
+              <h4 className={styles.h4}>curta no insta</h4>
             </div>
           </div>
         </section>

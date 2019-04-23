@@ -99,3 +99,31 @@
     width: 100%;
   }
 }
+
+.socials {
+  .h2 {
+    color: #242d4c;
+    margin: 2em 0;
+    font-weight: 200;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      width: 70px;
+      height: 70px;
+      background: #b1b1b1;
+      border-radius: 70px;
+      margin: 5px 20px;
+    }
+    .h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+      color: #b1b1b1;
+      letter-spacing: 2px;
+    }
+  }
+}
