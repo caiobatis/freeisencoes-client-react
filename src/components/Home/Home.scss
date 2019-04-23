@@ -127,3 +127,46 @@
     }
   }
 }
+.whoTitle {
+  background: #1c2236;
+  .h2 {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 200;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+  }
+}
+
+.whoItems {
+  background: #242d4c;
+  .list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    li {
+      list-style: none;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 200px;
+      justify-content: center;
+      .p {
+        color: #fff;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+      }
+      .icon {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 40px;
+      }
+    }
+  }
+
+}
