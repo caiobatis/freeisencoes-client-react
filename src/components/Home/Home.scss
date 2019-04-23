@@ -52,3 +52,50 @@
     }
   }
 }
+
+.services {
+  background: #efefef;
+  padding: 3em 0;
+
+  .h2 {
+    margin: 0 0 1em;
+    font-weight: 200;
+  }
+
+  [class*=cardWithIcon] {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    align-items: center;
+    .icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eee;
+      border-radius: 60px;
+    }
+    .title {
+      margin: 15px 0;
+
+      .h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    .description {
+      text-align: center;
+      .span {
+        font-size: 14px;
+        color: rgb(128, 134, 138);
+      }
+    }
+  }
+  .line {
+    display: block;
+    height: 30px;
+    width: 100%;
+  }
+}

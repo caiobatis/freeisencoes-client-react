@@ -82,13 +82,47 @@ class Routes extends Component {
                   <div className={styles.title}>
                     <h4 className={styles.h4}>Tributos e Isenções</h4>
                   </div>
-                  <div className="description">
-                    <span className="span">O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                  <div className={styles.description}>
+                    <span className={styles.span}>O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                  </div>
+                </CardWithIcon>
+              </div>
+              <div className="col-md-4">
+                <CardWithIcon>
+                  <div className={styles.icon}>check</div>
+                  <div className={styles.title}>
+                    <h4 className={styles.h4}>Tributos e Isenções</h4>
+                  </div>
+                  <div className={styles.description}>
+                    <span className={styles.span}>O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
                   </div>
                 </CardWithIcon>
               </div>
               <div className="col-md-2"></div>
+              <div className={styles.line}></div>
               <div className="col-md-2"></div>
+              <div className="col-md-4">
+                <CardWithIcon>
+                  <div className={styles.icon}>check</div>
+                  <div className={styles.title}>
+                    <h4 className={styles.h4}>Tributos e Isenções</h4>
+                  </div>
+                  <div className={styles.description}>
+                    <span className={styles.span}>O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                  </div>
+                </CardWithIcon>
+              </div>
+              <div className="col-md-4">
+                <CardWithIcon>
+                  <div className={styles.icon}>check</div>
+                  <div className={styles.title}>
+                    <h4 className={styles.h4}>Tributos e Isenções</h4>
+                  </div>
+                  <div className={styles.description}>
+                    <span className={styles.span}>O requerente fica isento de pagar esse imposto anualmente. Este beneficio é válido para veículos 0KM ou semi-novo até R$ 70.000,00.</span>
+                  </div>
+                </CardWithIcon>
+              </div>
               <div className="col-md-2"></div>
             </div>
           </div>
