@@ -3,8 +3,16 @@ import Header from '../Header/Header'
 import CardWithIcon from '../Cards/CardWithIcon'
 import styles from './Home.scss'
 
+import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
+
+
+
 class Routes extends Component {
+
   render() {
+    
+    AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
+
     return (
       <div className={styles.home}>
         <Header/>
@@ -124,6 +132,25 @@ class Routes extends Component {
                 </CardWithIcon>
               </div>
               <div className="col-md-2"></div>
+            </div>
+          </div>
+        </section>
+        <section className="aboutUs"></section>
+        <section className={styles.socials}>
+          <div className="container">
+            <div className="text-center">
+              <h2 className={styles.h2}>Acompanhe as novidades da Free Isenções nas midias sociais</h2>
+            </div>
+          </div>
+          <div className="container">
+            <div class="powr-social-feed" id="230093b0_1555424118"></div>
+          </div>
+          <div className="container">
+            <div className="flex">
+              <h4 className="h4">curta no face</h4>
+              <div className="icon"></div>
+              <div className="icon"></div>
+              <h4 className="h4">curta no insta</h4>
             </div>
           </div>
         </section>
