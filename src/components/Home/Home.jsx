@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header'
 import CardWithIcon from '../Cards/CardWithIcon'
+import Slider from "react-slick"
 import styles from './Home.scss'
 
 import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
@@ -12,7 +13,13 @@ class Routes extends Component {
   render() {
     
     AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
-
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     return (
       <div className={styles.home}>
         <Header/>
@@ -167,7 +174,40 @@ class Routes extends Component {
             </div>
           </div>
         </section>
+        <section className={styles.challenger}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2 className={styles.h2}>Isenções Conquistadas</h2>
+              </div>
+              <div className="col-md-12">
+                <div className={styles.challengerList}>
+                  <div className={styles.item}>
+                    <div className={styles.image}></div>
+                    <div className={styles.text}>
+                      <h4 className={styles.h4}>Juliana dos Santos</h4>
+                      <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                    </div>
+                  </div>
 
+                </div>
+
+              </div>
+              
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+      </Slider>
+
+            </div>
+            
+
+          </div>
+        </section>
 
 
         <section className="aboutUs"></section>

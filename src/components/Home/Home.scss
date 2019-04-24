@@ -170,3 +170,36 @@
   }
 
 }
+
+.challenger {
+  padding: 3em 0;
+  .h2 {
+    text-align: center;
+    color: #242d4c;
+    text-transform: uppercase;
+    font-size: 34px;
+  }
+  .challengerList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    .item {
+      width: 570px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .image {
+        width: 350px;
+        height: 350px;
+        background: #eee;
+        border-radius: 350px;
+      }
+      .text {
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
+  }
+}
