@@ -195,6 +195,7 @@
         height: 350px;
         background: #eee;
         border-radius: 350px;
+        margin: 0 auto;
       }
       .text {
         text-align: center;
@@ -202,4 +203,19 @@
       }
     }
   }
+
+  [class*=slick-slider] {
+    width: 100%;
+  }
+  [class*=slick-slide] {
+    opacity: .5;
+  }
+  [class*=slick-center] {
+    opacity: 1;
+  }
+  [class*=slick-arrow] {
+    background: transparent;
+  }
+
+
 }

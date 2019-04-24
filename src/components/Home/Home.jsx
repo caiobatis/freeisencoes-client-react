@@ -14,10 +14,13 @@ class Routes extends Component {
     
     AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
     var settings = {
-      dots: true,
+      dots: false,
+      className: 'center-challenger',
+      centerMode: true,
       infinite: true,
+      centerPadding: 0,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1
     };
     return (
@@ -182,27 +185,45 @@ class Routes extends Component {
               </div>
               <div className="col-md-12">
                 <div className={styles.challengerList}>
-                  <div className={styles.item}>
-                    <div className={styles.image}></div>
-                    <div className={styles.text}>
-                      <h4 className={styles.h4}>Juliana dos Santos</h4>
-                      <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                  <Slider {...settings}>
+                    <div className={styles.item}>
+                      <div className={styles.image}></div>
+                      <div className={styles.text}>
+                        <h4 className={styles.h4}>Juliana dos Santos</h4>
+                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                      </div>
                     </div>
-                  </div>
-
+                    <div className={styles.item}>
+                      <div className={styles.image}></div>
+                      <div className={styles.text}>
+                        <h4 className={styles.h4}>Juliana dos Santos</h4>
+                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                      </div>
+                    </div>
+                    <div className={styles.item}>
+                      <div className={styles.image}></div>
+                      <div className={styles.text}>
+                        <h4 className={styles.h4}>Juliana dos Santos</h4>
+                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                      </div>
+                    </div>
+                    <div className={styles.item}>
+                      <div className={styles.image}></div>
+                      <div className={styles.text}>
+                        <h4 className={styles.h4}>Juliana dos Santos</h4>
+                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                      </div>
+                    </div>
+                    <div className={styles.item}>
+                      <div className={styles.image}></div>
+                      <div className={styles.text}>
+                        <h4 className={styles.h4}>Juliana dos Santos</h4>
+                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
+                      </div>
+                    </div>
+                  </Slider>
                 </div>
-
               </div>
-              
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-      </Slider>
-
             </div>
             
 
