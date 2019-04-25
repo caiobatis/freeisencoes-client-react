@@ -212,11 +212,12 @@
   [class*=slick-slider] {
     width: 100%;
     [class*=slick-slide] {
-      opacity: 0;
-      transition: all .3s;
-    }
-    [class*=slick-active] {
       opacity: .5;
+      transition: all .3s;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .text {
         opacity: 0;
         transition: all .2s;
@@ -225,6 +226,7 @@
       .image {
         width: 200px;
         height: 200px;
+        transition: all .3s;
       }
     }
     [class*=slick-center] {
@@ -289,147 +291,4 @@
     }
 
   }
-
-
-  // [class*=BrainhubCarousel] {
-  //   overflow: hidden;
-  //   display: flex;
-  //   align-items: center;
-  //   [class*=BrainhubCarousel__trackContainer] {
-  //     overflow: hidden;
-  //   }
-  //   [class*=BrainhubCarousel__track] {
-  //     display: flex;
-  //     overflow: hidden;
-  //     list-style: none;
-  //     margin: 0;
-  //     padding: 0;
-  //     &[class*=BrainhubCarousel__track--transition] {
-  //       transition: transform;
-  //     }
-  //   }
-  //   [class*=BrainhubCarousel__arrows] {
-  //     cursor: pointer;
-  //     position: relative;
-  //     padding: 21px;
-  //     border: none;
-  //     overflow: hidden;
-  //     outline: 0;
-  //     font-size: 0;
-  //     line-height: 0;
-  //     background-color: #7b59ff;
-  //     span {
-  //       display: block;
-  //       position: absolute;
-  //       top: 50%;
-  //       left: 50%;
-  //       border-style: solid;
-  //       border-color: #fff;
-  //       border-width: 3px 3px 0 0;
-  //       padding: 5px;
-  //       transition: .3s;
-  //       font-size: 0;
-  //       &:hover {
-  //         background-color: #8768ff;
-  //         span {
-  //           border-color: #fff;
-  //           margin: 0
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  
-  
-  
-  
-  
-  // [class*=BrainhubCarousel__dots] {
-  //   display: flex;
-  //   justify-content: center;
-  //   list-style: none;
-  //   margin: 0;
-  //   padding: 0;
-  //   font-size: 0;
-  //   line-height: 0;
-  
-  //   [class*=BrainhubCarousel__dot] {
-  //     outline: 0;
-  //     padding: 10px;
-  //     border: none;
-  //     opacity: .5;
-  //     cursor: pointer;
-  
-  //     &[class*=BrainhubCarousel__dot--selected] {
-  //       opacity: 1 !important;
-  //       &:hover {
-  //         opacity: 1;
-  //       }
-  //       &:before {
-  //         content: "";
-  //         display: block;
-  //         width: 5px;
-  //         height: 5px;
-  //         border-radius: 50%;
-  //         padding: 0;
-  //         border: none;
-  //         background: #000;
-  //       }
-  //     }
-  //   }
-  // }
-  // [class*=BrainhubCarousel__thumbnail] {
-  //   outline: 0;
-  //   padding: 10px;
-  //   border: none;
-  //   opacity: .5;
-  //   cursor: pointer;
-  //   &[class*=BrainhubCarousel__thumbnail--selected] {
-  //     opacity: 1 !important;
-  //     &:hover {
-  //       opacity: 1;
-  //     }
-  //   }
-  //   &[type=button] {
-  //     -webkit-appearance: none;
-  //   }
-  // }
-  
-  // [class*=BrainhubCarousel__arrowLeft] {
-  //   span {
-  //     transform: translate(-50%,-50%) rotate(-135deg);
-  //     margin-left: 2.45px
-  //   }
-  // }
-  // [class*=BrainhubCarousel__arrowRight] {
-  //   span {
-  //     transform: translate(-50%,-50%) rotate(45deg);
-  //     margin-left: -2.45px
-  //   }
-  // }
-  
-  // [class*=BrainhubCarouselItem] {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   position: relative;
-  
-  //   [class*=BrainhubCarouselItem--clickable] {
-  //     cursor: pointer
-  //   }
-  //   [class*=debug-number] {
-  //     position: absolute;
-  //     top: 0;
-  //     bottom: 0;
-  //     left: 0;
-  //     right: 0;
-  //     display: -ms-flexbox;
-  //     display: flex;
-  //     -ms-flex-pack: center;
-  //     justify-content: center;
-  //     font-size: 2em;
-  //     text-shadow: 0 0 9px #fff
-  //   }
-  // }
-
 }
