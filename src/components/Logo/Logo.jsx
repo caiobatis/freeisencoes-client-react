@@ -1,5 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
 import Link from '../Link/Link'
 import styles from './Logo.scss'
 

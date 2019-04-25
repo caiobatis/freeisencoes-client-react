@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
-    "@brainhubeu/react-carousel": "^1.10.17",
     "@svgr/webpack": "4.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -41,9 +40,7 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.5.0",
     "postcss-safe-parser": "4.0.1",
-    "re-carousel": "^2.3.1",
     "react": "^16.8.6",
-    "react-alice-carousel": "^1.13.11",
     "react-app-polyfill": "^0.2.2",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.6",

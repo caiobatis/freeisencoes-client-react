@@ -1,7 +1,8 @@
 import React from 'react'
-import styles from './Header.scss'
 import Buttons from '../Buttons/Buttons'
 import Logo from '../Logo/Logo'
+import Link from '../Link/Link'
+import styles from './Header.scss'
 
 const Header = props => {
   return (
@@ -19,11 +20,11 @@ const Header = props => {
             <div className="col-md-6">
               <nav className={styles.menu}>
                 <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Sobre</a></li>
-                  <li><a href="">Serviços</a></li>
-                  <li><a href="">Dúvidas</a></li>
-                  <li><a href="">Contato</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/">Sobre</Link></li>
+                  <li><Link to="/">Serviços</Link></li>
+                  <li><Link to="/">Dúvidas</Link></li>
+                  <li><Link to="/">Contato</Link></li>
                 </ul>
               </nav>
             </div>

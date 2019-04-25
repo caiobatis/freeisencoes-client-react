@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import { Link as _link } from 'react-router-dom'
+import { Link as LinkRouter } from 'react-router-dom'
 import styles from './Link.scss'
 
 const Link = props => {
@@ -15,12 +15,12 @@ const Link = props => {
 
   (props.to) ?
     content = 
-    <_link
+    <LinkRouter
       to={props.to}
       className={buttonClass}
     >
       {props.children}
-    </_link> :
+    </LinkRouter> :
     content = 
     <a
       href={props.to}
