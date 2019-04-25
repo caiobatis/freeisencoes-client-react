@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import Header from '../Header/Header'
 import CardWithIcon from '../Cards/CardWithIcon'
-import Slider from "react-slick"
+import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
 import styles from './Home.scss'
 
-import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
-
-
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 class Routes extends Component {
 
   render() {
     
     AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
+    
     var settings = {
       dots: false,
       className: 'center-challenger',
@@ -22,7 +22,8 @@ class Routes extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1
-    };
+    }
+
     return (
       <div className={styles.home}>
         <Header/>
@@ -185,7 +186,7 @@ class Routes extends Component {
               </div>
               <div className="col-md-12">
                 <div className={styles.challengerList}>
-                  <Slider {...settings}>
+                  <AliceCarousel mouseDragEnabled>
                     <div className={styles.item}>
                       <div className={styles.image}></div>
                       <div className={styles.text}>
@@ -207,21 +208,7 @@ class Routes extends Component {
                         <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
                       </div>
                     </div>
-                    <div className={styles.item}>
-                      <div className={styles.image}></div>
-                      <div className={styles.text}>
-                        <h4 className={styles.h4}>Juliana dos Santos</h4>
-                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
-                      </div>
-                    </div>
-                    <div className={styles.item}>
-                      <div className={styles.image}></div>
-                      <div className={styles.text}>
-                        <h4 className={styles.h4}>Juliana dos Santos</h4>
-                        <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
-                      </div>
-                    </div>
-                  </Slider>
+                  </AliceCarousel>                
                 </div>
               </div>
             </div>
@@ -239,7 +226,7 @@ class Routes extends Component {
             </div>
           </div>
           <div className="container">
-            <div class="powr-social-feed" id="230093b0_1555424118"></div>
+            <div className="powr-social-feed" id="230093b0_1555424118"></div>
           </div>
           <div className="container">
             <div className={styles.flex}>
