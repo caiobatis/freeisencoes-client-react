@@ -101,10 +101,11 @@
 }
 
 .socials {
+  padding: 2em 0;
   .h2 {
     color: #242d4c;
-    margin: 2em 0;
     font-weight: 200;
+    margin: 0 0 1em;
   }
   .flex {
     display: flex;
@@ -337,19 +338,98 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       .image {
-        width: 280px;
+        padding: 15px;
         img {
           width: 100%;
         }
       }
       .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1em;
         .brand {
           text-transform: uppercase;
           color: #4460bf;
           font-weight: 600;
         }
       }
+      .actions {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
+
+  [class*=slick-track] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  [class*=slick-slider] {
+    width: 100%;
+    [class*=slick-slide] {
+      transition: all .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > div {
+        width: 100%;
+      }
+    }
+  }
+  [class*=slick-arrow] {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    right: -50px;
+    &[class*=slick-prev] {
+      left: -50px;
+      &:before {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: #000;
+        display: block;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 13px;
+      }
+      &:after {
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: #000;
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: 15px;
+      }
+    }
+    &:before {
+      content: '';
+      width: 30px;
+      height: 1px;
+      background: #000;
+      display: block;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 13px;
+    }
+    &:after {
+      content: '';
+      width: 30px;
+      height: 1px;
+      background: #000;
+      display: block;
+      position: absolute;
+      transform: rotate(-45deg);
+      bottom: 15px;
+    }
+
+  }
+
 }

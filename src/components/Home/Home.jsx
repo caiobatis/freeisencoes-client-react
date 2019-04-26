@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
 import Logo from '../Logo/Logo'
 import HomeServices from './HomeServices'
+import Slider from 'react-slick'
 import HomeWhy from './HomeWhy'
 import HomeRight from './HomeRight'
 import HomeChallenger from './HomeChallenger'
@@ -14,10 +15,26 @@ import styles from './Home.scss'
 class Routes extends Component {
 
   render() {
+
+    const settings = {
+      dots: false,
+      infinite: true,
+      centerPadding: 0,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    }
+  
     
     AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
 
     const vehicles = [
+      {
+        id: 1,
+        image: 'https://www.chevroletnova.com.br/Upload/CorReferente_16112017084454.png',
+        brand: 'Chevrolet',
+        model: 'Onix 1.0 Flex'
+      },
       {
         id: 1,
         image: 'https://www.chevroletnova.com.br/Upload/CorReferente_16112017084454.png',
@@ -99,25 +116,27 @@ class Routes extends Component {
               </div>
               <div className="col-md-12">
                 <div className={styles.items}>
-                  {
-                    vehicles.map((item, i)=> (
-                      <div className={styles.item} key={i}>
-                        <div className={styles.image}>
-                          <img src={item.image} alt=""/>
+                  <Slider {...settings}>
+                    {
+                      vehicles.map((item, i)=> (
+                        <div className={styles.item} key={i}>
+                          <div className={styles.image}>
+                            <img src={item.image} alt=""/>
+                          </div>
+                          <div className={styles.text}>
+                            <div className={styles.brand}>{item.brand}</div>
+                            <div className={styles.model}>{item.model}</div>
+                          </div>
+                          <div className={styles.actions}>
+                            <Buttons
+                              label='Eu quero'
+                              type='primary'
+                            />
+                          </div>
                         </div>
-                        <div className={styles.text}>
-                          <div className={styles.brand}>{item.brand}</div>
-                          <div className={styles.model}>{item.model}</div>
-                        </div>
-                        <div className={styles.actions}>
-                          <Buttons
-                            label='Eu quero'
-                            type='primary'
-                          />
-                        </div>
-                      </div>
-                    ))
-                  }
+                      ))
+                    }
+                  </Slider>
                 </div>
               </div>
             </div>
