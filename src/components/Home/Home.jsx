@@ -4,6 +4,7 @@ import CardWithIcon from '../Cards/CardWithIcon'
 import AsyncScriptLoader from '../../lib/AsyncScriptLoader'
 import styles from './Home.scss'
 import Slider from 'react-slick'
+import Logo from '../Logo/Logo';
 
 class Routes extends Component {
 
@@ -223,7 +224,34 @@ class Routes extends Component {
         </section>
 
 
-        <section className="aboutUs"></section>
+        <section className={styles.aboutUs}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h2 className={styles.h2}>Quem somos</h2>
+              </div>
+              <div className="col-md-6">
+                <div className={styles.logoCenter}>
+                  <Logo
+                    type={'secundary'}
+                  />
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={styles.text}>
+                  <i>A Free Isenções é uma empresa de Santos, especializada no processo de isenções que conta com uma equipe de atendimento qualificada e empenhada em garantir que os direitos de seus clientes sejam exercidos de acordo com a legislação brasileira.</i> <br/> <br/>
+                  <p className={styles.p}>
+                    <b>Nossa missão</b> é proporcionar um atendimento eficiente e eficaz a nossos clientes, garantindo sua satisfação acerca de nossos serviços. <br/> <br/>
+                    <b>Nossa visão</b> é ser referência no mercado de assessoria ao público PCD acerca de isenção. <br/> <br/>
+                    Buscamos proporcionar a <b>facilidade e agilidade</b> a nossos clientes acerca da burocracia que envolve esse tipo de processo. <br/> <br/>
+                    O respeito e exercício de nossos direitos como cidadãos é a nossa preocupação! <br/><br/>
+                    <strong>Você tem o direito e a Free, isenções.</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className={styles.socials}>
           <div className="container">
             <div className="text-center">

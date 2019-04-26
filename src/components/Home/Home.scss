@@ -292,3 +292,31 @@
 
   }
 }
+
+.aboutUs {
+  padding: 3em 0;
+  background: #eee;
+  .h2 {
+    color: #203c93;
+    font-weight: 200;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .text {
+    .p {
+      color: #203c93;
+      font-size: 20px;
+    }
+    i {
+      color: #203c93;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  .logoCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
