@@ -8,6 +8,7 @@ import HomeWhy from './HomeWhy'
 import HomeRight from './HomeRight'
 import HomeChallenger from './HomeChallenger'
 import Buttons from '../Buttons/Buttons'
+import Footer from '../Footer/Footer'
 
 import styles from './Home.scss'
 
@@ -141,6 +142,46 @@ class Routes extends Component {
             </div>
           </div>
         </section>
+        <section className="contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h2 className="h2">Contato</h2>
+                <p className="p">Aguardamos o seu contato por qualquer que seja o canal</p>
+              </div>
+              <div className="col-md-2"></div>
+              <div className="col-md-4">
+                <div className="uppercase">
+                  <p className="p">
+                    Av. Senador Feijó, 686 - cj. 615 <br/>
+                    The Blue Office Mall <br/><br/>
+                    Santos, São Paulo <br/><br/>
+                    CEP:11015-504
+                  </p>
+                  <p className="p">
+                    (13) 3222.3722 <br/><br/>
+                    (13) 95538.0601 <br/><br/>
+                    (13) 98852.5405 <br/><br/>
+                    (13) 99654.5993
+                  </p>
+                  <p className="p"><b>atendimento@freeisencoes.com.br</b></p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="form">
+                  <div className="text-center">
+                    <p className="p"><b>Escreva para nós que responderemos logo em seguida</b></p>
+                  </div>
+                  <form>
+
+                  </form>
+                </div>
+              </div>
+              <div className="col-md-2"></div>
+            </div>
+          </div>
+        </section>
+        <Footer/>
       </div>
     )
   }
