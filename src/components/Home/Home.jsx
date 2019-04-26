@@ -6,6 +6,7 @@ import HomeServices from './HomeServices'
 import HomeWhy from './HomeWhy'
 import HomeRight from './HomeRight'
 import HomeChallenger from './HomeChallenger'
+import Buttons from '../Buttons/Buttons'
 
 import styles from './Home.scss'
 
@@ -15,6 +16,27 @@ class Routes extends Component {
   render() {
     
     AsyncScriptLoader('https://www.powr.io/powr.js?platform=html')
+
+    const vehicles = [
+      {
+        id: 1,
+        image: 'https://www.chevroletnova.com.br/Upload/CorReferente_16112017084454.png',
+        brand: 'Chevrolet',
+        model: 'Onix 1.0 Flex'
+      },
+      {
+        id: 1,
+        image: 'https://www.chevroletnova.com.br/Upload/CorReferente_16112017084454.png',
+        brand: 'Chevrolet',
+        model: 'Onix 1.0 Flex'
+      },
+      {
+        id: 1,
+        image: 'https://www.chevroletnova.com.br/Upload/CorReferente_16112017084454.png',
+        brand: 'Chevrolet',
+        model: 'Onix 1.0 Flex'
+      }
+    ]
 
     return (
       <div className={styles.home}>
@@ -66,6 +88,38 @@ class Routes extends Component {
               <div className={styles.icon}></div>
               <div className={styles.icon}></div>
               <h4 className={styles.h4}>curta no insta</h4>
+            </div>
+          </div>
+        </section>
+        <section className={styles.vehicles}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h2 className={styles.h2}>Veículos</h2>
+              </div>
+              <div className="col-md-12">
+                <div className={styles.items}>
+                  {
+                    vehicles.map((item, i)=> (
+                      <div className={styles.item} key={i}>
+                        <div className={styles.image}>
+                          <img src={item.image} alt=""/>
+                        </div>
+                        <div className={styles.text}>
+                          <div className={styles.brand}>{item.brand}</div>
+                          <div className={styles.model}>{item.model}</div>
+                        </div>
+                        <div className={styles.actions}>
+                          <Buttons
+                            label='Eu quero'
+                            type='primary'
+                          />
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
             </div>
           </div>
         </section>

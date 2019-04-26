@@ -320,3 +320,36 @@
     height: 100%;
   }
 }
+
+.vehicles {
+  background: #f5f5f5;
+  padding: 3em 0;
+  .h2 {
+    color: #4460bf;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .image {
+        width: 280px;
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        .brand {
+          text-transform: uppercase;
+          color: #4460bf;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
