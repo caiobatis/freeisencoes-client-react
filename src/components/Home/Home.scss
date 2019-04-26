@@ -341,8 +341,11 @@
       justify-content: center;
       .image {
         padding: 15px;
+        height: 230px;
         img {
-          width: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          margin: 0 auto;
         }
       }
       .text {
