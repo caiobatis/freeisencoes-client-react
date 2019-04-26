@@ -12,19 +12,50 @@ const Footer = props => {
 
 
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <div className="logoCenter">
+            <div className={styles.logoCenter}>
               <Logo
                 type='secundary'
               />
             </div>
           </div>
-          <div className="col-md-3"></div>
-          <div className="col-md-3"></div>
-          <div className="col-md-3"></div>
+          <div className="col-md-3">
+            <ul className={styles.list}>
+              <li><p className={styles.p}>COMPRE POR E-MAIL</p></li>
+              <li><a href="">atendimento@freeisencoes.com.br</a></li>
+              <li><p className={styles.p}>COMPRE POR TELEFONE</p></li>
+              <li><a href="">(13) 3222-3722</a></li>
+            </ul>
+          </div>
+          <div className="col-md-3">
+            <ul className={styles.list}>
+              <li><p className={styles.p}>Compre por Whatsapp</p></li>
+              <li><a href="">(13) 95538.0601</a></li>
+              <li><a href="">(13) 98852.5405</a></li>
+              <li><a href="">(13) 99654.5993</a></li>
+            </ul>
+          </div>
+          <div className="col-md-3">
+            <ul className={styles.list}>
+              <li><p className={styles.p}>Compre por Whatsapp</p></li>
+              <li>Av. Senador Feijó, 686 - cj. 615</li>
+              <li>The Blue Office Mall Santos,</li>
+              <li>São Paulo - CEP: 11015-504</li>
+            </ul>
+          </div>
+          <div className="col-md-12">
+            <div className="text-right">
+              <ul className={styles.socials}>
+                <li><i className="fab fa-facebook-f"></i></li>
+                <li><i className="fab fa-instagram"></i></li>
+                <li><i className="fab fa-whatsapp"></i></li>
+                <li><i className="fab fa-linkedin-in"></i></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

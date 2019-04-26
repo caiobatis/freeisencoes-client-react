@@ -436,3 +436,29 @@
   }
 
 }
+
+.contact {
+  background: #222c5d;
+  padding: 2em 0;
+  .h2 {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+  
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .p {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .uppercase .p {
+    text-transform: uppercase;
+  }
+}

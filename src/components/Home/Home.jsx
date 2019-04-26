@@ -142,29 +142,29 @@ class Routes extends Component {
             </div>
           </div>
         </section>
-        <section className="contact">
+        <section className={styles.contact}>
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h2 className="h2">Contato</h2>
-                <p className="p">Aguardamos o seu contato por qualquer que seja o canal</p>
+                <h2 className={styles.h2}>Contato</h2>
+                <p className={styles.title}>Aguardamos o seu contato por qualquer que seja o canal</p>
               </div>
               <div className="col-md-2"></div>
               <div className="col-md-4">
-                <div className="uppercase">
-                  <p className="p">
+                <div className={styles.uppercase}>
+                  <p className={styles.p}>
                     Av. Senador Feijó, 686 - cj. 615 <br/>
                     The Blue Office Mall <br/><br/>
                     Santos, São Paulo <br/><br/>
                     CEP:11015-504
                   </p>
-                  <p className="p">
+                  <p className={styles.p}>
                     (13) 3222.3722 <br/><br/>
                     (13) 95538.0601 <br/><br/>
                     (13) 98852.5405 <br/><br/>
                     (13) 99654.5993
                   </p>
-                  <p className="p"><b>atendimento@freeisencoes.com.br</b></p>
+                  <p className={styles.p}><b>atendimento@freeisencoes.com.br</b></p>
                 </div>
               </div>
               <div className="col-md-4">
