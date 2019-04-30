@@ -32,7 +32,9 @@
         align-items: center;
         justify-content: center;
         border-radius: 4px;
-        background: #ccc;
+        background: #28335a;
+        font-size: 40px;
+        color: #fff;
       }
       .title {
         margin: 15px 0 0;
@@ -117,6 +119,11 @@
       background: #b1b1b1;
       border-radius: 70px;
       margin: 5px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: #fff;
     }
     .h4 {
       text-transform: uppercase;
@@ -128,6 +135,7 @@
     }
   }
 }
+
 .whoTitle {
   background: #1c2236;
   .h2 {

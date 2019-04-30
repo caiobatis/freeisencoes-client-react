@@ -11,14 +11,11 @@
     height: 100%;
     width: 100%;
   }
-  * {
-    transition: all 0.3s ease;
-  }
   .nav {
-    position: fixed;
     width: 100%;
     padding: 15px 0;
     z-index: 9;
+    transition: all 0.3s ease;
     .menu {
       ul {
         list-style: none;
@@ -41,9 +38,12 @@
         }
       }
     }
+    * {
+      transition: all 0.3s ease;
+    }
   }
-  .helpnav {
-    height: 100px;
+  .fixed {
+    background: #232c4b;
   }
   .brand {
     display: flex;

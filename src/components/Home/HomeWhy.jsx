@@ -17,7 +17,9 @@ const HomeWhy = props => {
           <div className="col-md-2"></div>
           <div className="col-md-2">
             <CardWithIcon >
-              <div className={styles.icon}>like</div>
+              <div className={styles.icon}>
+                <i className="far fa-thumbs-up"></i>
+              </div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Alto indice de aprovação</h4>
               </div>
@@ -28,7 +30,9 @@ const HomeWhy = props => {
           </div>
           <div className="col-md-2">
             <CardWithIcon >
-              <div className={styles.icon}>like</div>
+              <div className={styles.icon}>
+                <i className="far fa-thumbs-up"></i>
+              </div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Alto indice de aprovação</h4>
               </div>
@@ -39,7 +43,9 @@ const HomeWhy = props => {
           </div>
           <div className="col-md-2">
             <CardWithIcon >
-              <div className={styles.icon}>like</div>
+              <div className={styles.icon}>
+                <i className="far fa-thumbs-up"></i>
+              </div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Alto indice de aprovação</h4>
               </div>
@@ -50,7 +56,9 @@ const HomeWhy = props => {
           </div>
           <div className="col-md-2">
             <CardWithIcon >
-              <div className={styles.icon}>like</div>
+              <div className={styles.icon}>
+                <i className="far fa-thumbs-up"></i>
+              </div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Alto indice de aprovação</h4>
               </div>

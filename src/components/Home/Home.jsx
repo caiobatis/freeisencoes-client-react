@@ -11,6 +11,7 @@ import Buttons from '../Buttons/Buttons'
 import Footer from '../Footer/Footer'
 
 import styles from './Home.scss'
+import { StickyContainer } from 'react-sticky'
 
 
 class Routes extends Component {
@@ -57,131 +58,137 @@ class Routes extends Component {
 
     return (
       <div className={styles.home}>
-        <Header/>
-        <HomeWhy/>
-        <HomeServices/>
-        <HomeRight/>
-        <HomeChallenger/>
-        <section className={styles.aboutUs}>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <h2 className={styles.h2}>Quem somos</h2>
-              </div>
-              <div className="col-md-6">
-                <div className={styles.logoCenter}>
-                  <Logo
-                    type={'secundary'}
-                  />
+        <StickyContainer>
+          <Header/>
+          <HomeWhy/>
+          <HomeServices/>
+          <HomeRight/>
+          <HomeChallenger/>
+          <section className={styles.aboutUs}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h2 className={styles.h2}>Quem somos</h2>
                 </div>
-              </div>
-              <div className="col-md-6">
-                <div className={styles.text}>
-                  <i>A Free Isenções é uma empresa de Santos, especializada no processo de isenções que conta com uma equipe de atendimento qualificada e empenhada em garantir que os direitos de seus clientes sejam exercidos de acordo com a legislação brasileira.</i> <br/> <br/>
-                  <p className={styles.p}>
-                    <b>Nossa missão</b> é proporcionar um atendimento eficiente e eficaz a nossos clientes, garantindo sua satisfação acerca de nossos serviços. <br/> <br/>
-                    <b>Nossa visão</b> é ser referência no mercado de assessoria ao público PCD acerca de isenção. <br/> <br/>
-                    Buscamos proporcionar a <b>facilidade e agilidade</b> a nossos clientes acerca da burocracia que envolve esse tipo de processo. <br/> <br/>
-                    O respeito e exercício de nossos direitos como cidadãos é a nossa preocupação! <br/><br/>
-                    <strong>Você tem o direito e a Free, isenções.</strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={styles.socials}>
-          <div className="container">
-            <div className="text-center">
-              <h2 className={styles.h2}>Acompanhe as novidades da Free Isenções nas midias sociais</h2>
-            </div>
-          </div>
-          <div className="container">
-            <div className="powr-social-feed" id="230093b0_1555424118"></div>
-          </div>
-          <div className="container">
-            <div className={styles.flex}>
-              <h4 className={styles.h4}>curta no face</h4>
-              <div className={styles.icon}></div>
-              <div className={styles.icon}></div>
-              <h4 className={styles.h4}>curta no insta</h4>
-            </div>
-          </div>
-        </section>
-        <section className={styles.vehicles}>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <h2 className={styles.h2}>Veículos</h2>
-              </div>
-              <div className="col-md-12">
-                <div className={styles.items}>
-                  <Slider {...settings}>
-                    {
-                      vehicles.map((item, i)=> (
-                        <div className={styles.item} key={i}>
-                          <div className={styles.image}>
-                            <img src={item.image} alt=""/>
-                          </div>
-                          <div className={styles.text}>
-                            <div className={styles.brand}>{item.brand}</div>
-                            <div className={styles.model}>{item.model}</div>
-                          </div>
-                          <div className={styles.actions}>
-                            <Buttons
-                              label='Eu quero'
-                              type='primary'
-                            />
-                          </div>
-                        </div>
-                      ))
-                    }
-                  </Slider>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className={styles.contact}>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <h2 className={styles.h2}>Contato</h2>
-                <p className={styles.title}>Aguardamos o seu contato por qualquer que seja o canal</p>
-              </div>
-              <div className="col-md-2"></div>
-              <div className="col-md-4">
-                <div className={styles.uppercase}>
-                  <p className={styles.p}>
-                    Av. Senador Feijó, 686 - cj. 615 <br/>
-                    The Blue Office Mall <br/><br/>
-                    Santos, São Paulo <br/><br/>
-                    CEP:11015-504
-                  </p>
-                  <p className={styles.p}>
-                    (13) 3222.3722 <br/><br/>
-                    (13) 95538.0601 <br/><br/>
-                    (13) 98852.5405 <br/><br/>
-                    (13) 99654.5993
-                  </p>
-                  <p className={styles.p}><b>atendimento@freeisencoes.com.br</b></p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="form">
-                  <div className="text-center">
-                    <p className="p"><b>Escreva para nós que responderemos logo em seguida</b></p>
+                <div className="col-md-6">
+                  <div className={styles.logoCenter}>
+                    <Logo
+                      type={'secundary'}
+                    />
                   </div>
-                  <form>
-
-                  </form>
+                </div>
+                <div className="col-md-6">
+                  <div className={styles.text}>
+                    <i>A Free Isenções é uma empresa de Santos, especializada no processo de isenções que conta com uma equipe de atendimento qualificada e empenhada em garantir que os direitos de seus clientes sejam exercidos de acordo com a legislação brasileira.</i> <br/> <br/>
+                    <p className={styles.p}>
+                      <b>Nossa missão</b> é proporcionar um atendimento eficiente e eficaz a nossos clientes, garantindo sua satisfação acerca de nossos serviços. <br/> <br/>
+                      <b>Nossa visão</b> é ser referência no mercado de assessoria ao público PCD acerca de isenção. <br/> <br/>
+                      Buscamos proporcionar a <b>facilidade e agilidade</b> a nossos clientes acerca da burocracia que envolve esse tipo de processo. <br/> <br/>
+                      O respeito e exercício de nossos direitos como cidadãos é a nossa preocupação! <br/><br/>
+                      <strong>Você tem o direito e a Free, isenções.</strong>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="col-md-2"></div>
             </div>
-          </div>
-        </section>
-        <Footer/>
+          </section>
+          <section className={styles.socials}>
+            <div className="container">
+              <div className="text-center">
+                <h2 className={styles.h2}>Acompanhe as novidades da Free Isenções nas midias sociais</h2>
+              </div>
+            </div>
+            <div className="container">
+              <div className="powr-social-feed" id="230093b0_1555424118"></div>
+            </div>
+            <div className="container">
+              <div className={styles.flex}>
+                <h4 className={styles.h4}>curta no face</h4>
+                <div className={styles.icon}>
+                  <i className="fab fa-facebook"></i>
+                </div>
+                <div className={styles.icon}>
+                  <i className="fab fa-instagram"></i>
+                </div>
+                <h4 className={styles.h4}>curta no insta</h4>
+              </div>
+            </div>
+          </section>
+          <section className={styles.vehicles}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <h2 className={styles.h2}>Veículos</h2>
+                </div>
+                <div className="col-md-12">
+                  <div className={styles.items}>
+                    <Slider {...settings}>
+                      {
+                        vehicles.map((item, i)=> (
+                          <div className={styles.item} key={i}>
+                            <div className={styles.image}>
+                              <img src={item.image} alt=""/>
+                            </div>
+                            <div className={styles.text}>
+                              <div className={styles.brand}>{item.brand}</div>
+                              <div className={styles.model}>{item.model}</div>
+                            </div>
+                            <div className={styles.actions}>
+                              <Buttons
+                                label='Eu quero'
+                                type='primary'
+                              />
+                            </div>
+                          </div>
+                        ))
+                      }
+                    </Slider>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className={styles.contact}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <h2 className={styles.h2}>Contato</h2>
+                  <p className={styles.title}>Aguardamos o seu contato por qualquer que seja o canal</p>
+                </div>
+                <div className="col-md-2"></div>
+                <div className="col-md-4">
+                  <div className={styles.uppercase}>
+                    <p className={styles.p}>
+                      Av. Senador Feijó, 686 - cj. 615 <br/>
+                      The Blue Office Mall <br/><br/>
+                      Santos, São Paulo <br/><br/>
+                      CEP:11015-504
+                    </p>
+                    <p className={styles.p}>
+                      (13) 3222.3722 <br/><br/>
+                      (13) 95538.0601 <br/><br/>
+                      (13) 98852.5405 <br/><br/>
+                      (13) 99654.5993
+                    </p>
+                    <p className={styles.p}><b>atendimento@freeisencoes.com.br</b></p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="form">
+                    <div className="text-center">
+                      <p className="p"><b>Escreva para nós que responderemos logo em seguida</b></p>
+                    </div>
+                    <form>
+
+                    </form>
+                  </div>
+                </div>
+                <div className="col-md-2"></div>
+              </div>
+            </div>
+          </section>
+          <Footer/>
+        </StickyContainer>
       </div>
     )
   }
