@@ -1,16 +1,8 @@
 import React from 'react'
-import classNames from 'classnames'
 import Logo from '../Logo/Logo'
 import styles from './Footer.scss'
 
 const Footer = props => {
-  
-  const card = classNames(styles.card, {
-    [styles.shadow]: props.shadow,
-    [styles[props.padding]]: props.padding,
-  })
-
-
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -25,17 +17,17 @@ const Footer = props => {
           <div className="col-md-3">
             <ul className={styles.list}>
               <li><p className={styles.p}>COMPRE POR E-MAIL</p></li>
-              <li><a href="">atendimento@freeisencoes.com.br</a></li>
+              <li><>atendimento@freeisencoes.com.br</></li>
               <li><p className={styles.p}>COMPRE POR TELEFONE</p></li>
-              <li><a href="">(13) 3222-3722</a></li>
+              <li><>(13) 3222-3722</></li>
             </ul>
           </div>
           <div className="col-md-3">
             <ul className={styles.list}>
               <li><p className={styles.p}>Compre por Whatsapp</p></li>
-              <li><a href="">(13) 95538.0601</a></li>
-              <li><a href="">(13) 98852.5405</a></li>
-              <li><a href="">(13) 99654.5993</a></li>
+              <li><>(13) 95538.0601</></li>
+              <li><>(13) 98852.5405</></li>
+              <li><>(13) 99654.5993</></li>
             </ul>
           </div>
           <div className="col-md-3">
@@ -50,12 +42,12 @@ const Footer = props => {
             <div className="text-right">
               <ul className={styles.socials}>
                 <li>
-                  <a href="https://www.facebook.com/freeisencoessantos/" target="_blank">
+                  <a href="https://www.facebook.com/freeisencoessantos/" rel="noopener noreferrer" target="_blank">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/freeisencoes/" target="_blank">
+                  <a href="https://www.instagram.com/freeisencoes/" rel="noopener noreferrer" target="_blank">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>

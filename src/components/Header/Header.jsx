@@ -1,7 +1,7 @@
 import React from 'react'
 import Buttons from '../Buttons/Buttons'
 import classNames from 'classnames'
-import { StickyContainer, Sticky } from 'react-sticky'
+import { Sticky } from 'react-sticky'
 import Logo from '../Logo/Logo'
 import Link from '../Link/Link'
 import styles from './Header.scss'

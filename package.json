@@ -44,10 +44,12 @@
     "react-app-polyfill": "^0.2.2",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-slick": "^0.24.0",
     "react-sticky": "^6.0.3",
     "react-swipe": "^6.0.4",
+    "redux": "^4.0.1",
     "redux-form": "^8.2.0",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
@@ -62,7 +64,7 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "NODE_PATH=./src node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
