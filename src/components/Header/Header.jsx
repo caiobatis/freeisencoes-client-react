@@ -11,43 +11,40 @@ const Header = props => {
 
   return (
     <header className={styles.header}>
-    <Sticky topOffset={100}>
-          {({style, isSticky}) => {
-            console.log(isSticky)
-            const navclass = classNames(styles.nav, {
-              [styles.fixed]: isSticky
-            })
-            return (
-            <div className={navclass} style={style}>
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className={styles.brand}>
-                      <Logo
-                        type={'white'}
-                      />
-                    </div>
+      <Sticky topOffset={100}>
+      {
+        ({style, isSticky}) => {
+        const navclass = classNames(styles.nav, {
+          [styles.fixed]: isSticky
+        })
+        return (
+          <div className={navclass} style={style}>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className={styles.brand}>
+                    <Logo
+                      type={'white'}
+                    />
                   </div>
-                  <div className="col-md-6">
-                    <nav className={styles.menu}>
-                      <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/">Sobre</Link></li>
-                        <li><Link to="/">Serviços</Link></li>
-                        <li><Link to="/">Dúvidas</Link></li>
-                        <li><Link to="/">Contato</Link></li>
-                      </ul>
-                    </nav>
-                  </div>
+                </div>
+                <div className="col-md-6">
+                  <nav className={styles.menu}>
+                    <ul>
+                      <li><Link to="/">Home</Link></li>
+                      <li><Link to="/">Sobre</Link></li>
+                      <li><Link to="/">Serviços</Link></li>
+                      <li><Link to="/">Dúvidas</Link></li>
+                      <li><Link to="/">Contato</Link></li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
-            )
-
-          }}
-        </Sticky>
-
-      <div className={styles.helpnav}></div>
+          </div>
+        )}
+      }
+      </Sticky>
       <div className="container">
         <div className="row">
           <div className="col-md-12">

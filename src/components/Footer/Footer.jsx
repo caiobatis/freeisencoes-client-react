@@ -49,8 +49,16 @@ const Footer = props => {
           <div className="col-md-12">
             <div className="text-right">
               <ul className={styles.socials}>
-                <li><i className="fab fa-facebook-f"></i></li>
-                <li><i className="fab fa-instagram"></i></li>
+                <li>
+                  <a href="https://www.facebook.com/freeisencoessantos/" target="_blank">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/freeisencoes/" target="_blank">
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
                 <li><i className="fab fa-whatsapp"></i></li>
                 <li><i className="fab fa-linkedin-in"></i></li>
               </ul>

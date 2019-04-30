@@ -105,10 +105,14 @@ class Routes extends Component {
               <div className={styles.flex}>
                 <h4 className={styles.h4}>curta no face</h4>
                 <div className={styles.icon}>
-                  <i className="fab fa-facebook"></i>
+                  <a href="https://www.facebook.com/freeisencoessantos/" target="_blank">
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
                 </div>
                 <div className={styles.icon}>
-                  <i className="fab fa-instagram"></i>
+                  <a href="https://www.instagram.com/freeisencoes/" target="_blank">
+                    <i className="fab fa-instagram"></i>
+                  </a>
                 </div>
                 <h4 className={styles.h4}>curta no insta</h4>
               </div>

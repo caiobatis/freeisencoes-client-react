@@ -26,14 +26,18 @@ const HomeChallenger = props => {
             <div className={styles.challengerList}>
               <Slider {...settings}>
                 <div className={styles.item}>
-                  <div className={styles.image}></div>
+                  <div className={styles.image}>
+                    <img src="http://www.freeisencoes.com.br/images/4.jpg" alt=""/>
+                  </div>
                   <div className={styles.text}>
                     <h4 className={styles.h4}>Juliana dos Santos</h4>
                     <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>
                   </div>
                 </div>
                 <div className={styles.item}>
-                  <div className={styles.image}></div>
+                  <div className={styles.image}>
+                    <img src="http://www.freeisencoes.com.br/images/6.jpg" alt=""/>
+                  </div>
                   <div className={styles.text}>
                     <h4 className={styles.h4}>Juliana dos Santos</h4>
                     <p className={styles.p}>Essa semana foi a vez da Juliana comprar seu carro com isenção no valor final. Nosso cliente é deficiente visual e quem vai dirigir é seu marido, mais um caso de beneficiário não condutor.</p>

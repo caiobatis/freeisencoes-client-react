@@ -16,7 +16,7 @@ const HomeServices = props => {
           <div className="col-md-2"></div>
           <div className="col-md-4">
             <CardWithIcon>
-              <div className={styles.icon}>check</div>
+              <div className={styles.icon}></div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Tributos e Isenções</h4>
               </div>
@@ -27,7 +27,7 @@ const HomeServices = props => {
           </div>
           <div className="col-md-4">
             <CardWithIcon>
-              <div className={styles.icon}>check</div>
+              <div className={styles.icon}></div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Tributos e Isenções</h4>
               </div>
@@ -41,7 +41,7 @@ const HomeServices = props => {
           <div className="col-md-2"></div>
           <div className="col-md-4">
             <CardWithIcon>
-              <div className={styles.icon}>check</div>
+              <div className={styles.icon}></div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Tributos e Isenções</h4>
               </div>
@@ -52,7 +52,7 @@ const HomeServices = props => {
           </div>
           <div className="col-md-4">
             <CardWithIcon>
-              <div className={styles.icon}>check</div>
+              <div className={styles.icon}></div>
               <div className={styles.title}>
                 <h4 className={styles.h4}>Tributos e Isenções</h4>
               </div>

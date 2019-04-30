@@ -75,7 +75,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #eee;
+      background: url('../../images/sprite.png') 0px no-repeat;
       border-radius: 60px;
     }
     .title {
@@ -164,16 +164,35 @@
       flex-direction: column;
       height: 200px;
       justify-content: center;
+      &:nth-child(1) {
+        .icon {
+          background-position: 0px -140px;
+        }
+      }
+      &:nth-child(2) {
+        .icon {
+          background-position: -67px -140px;
+        }
+      }
+      &:nth-child(3) {
+        .icon {
+          background-position: -200px -140px;
+        }
+      }
+      &:nth-child(4) {
+        .icon {
+          background-position: -133px -140px;
+        }
+      }
       .p {
         color: #fff;
         margin: 0 0 20px;
         text-transform: uppercase;
       }
       .icon {
-        width: 40px;
-        height: 40px;
-        background: #fff;
-        border-radius: 40px;
+        width: 70px;
+        height: 70px;
+        background: url('../../images/sprite.png') 0px 0px no-repeat;
       }
     }
   }
@@ -205,6 +224,12 @@
         background: #eee;
         border-radius: 350px;
         margin: 0 auto;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
       .text {
         text-align: center;
