@@ -12,9 +12,15 @@ import Footer from '../Footer/Footer'
 
 import styles from './Home.scss'
 import { StickyContainer } from 'react-sticky'
+import ContactForm from '../Contact/ContactForm';
 
 
 class Routes extends Component {
+  
+  
+  submit = values => {
+    console.log(values)
+  }
 
   render() {
 
@@ -159,8 +165,9 @@ class Routes extends Component {
                   <h2 className={styles.h2}>Contato</h2>
                   <p className={styles.title}>Aguardamos o seu contato por qualquer que seja o canal</p>
                 </div>
-                <div className="col-md-2"></div>
-                <div className="col-md-4">
+                <div className="col-md-1"></div>
+                <div className="col-md-5">
+                  <br/>
                   <div className={styles.uppercase}>
                     <p className={styles.p}>
                       Av. Senador Feijó, 686 - cj. 615 <br/>
@@ -177,17 +184,16 @@ class Routes extends Component {
                     <p className={styles.p}><b>atendimento@freeisencoes.com.br</b></p>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-5">
                   <div className="form">
+                    <br/>
                     <div className="text-center">
-                      <p className="p"><b>Escreva para nós que responderemos logo em seguida</b></p>
+                      <p className={styles.p}><b>Escreva para nós que <br/> responderemos logo em seguida</b></p>
                     </div>
-                    <form>
-
-                    </form>
+                    <ContactForm onSubmit={this.submit} />
                   </div>
                 </div>
-                <div className="col-md-2"></div>
+                <div className="col-md-1"></div>
               </div>
             </div>
           </section>

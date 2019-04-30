@@ -8,7 +8,7 @@ const Buttons = props => {
   const buttonClass = classNames(styles.button, {
     [styles.full]: props.full,
     [styles[props.type]]: props.type,
-    [styles.border]: props.border,
+    [styles.clear]: props.clear,
     [styles[props.size]]: props.size,
     [styles.uppercase]: props.uppercase,
   })

@@ -48,6 +48,14 @@
       }
     }
   }
+  &.clear {
+    border-color: transparent;
+    span {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
 }
 
 
