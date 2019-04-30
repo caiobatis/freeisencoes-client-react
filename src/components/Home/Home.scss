@@ -70,13 +70,19 @@
     border-radius: 15px;
     align-items: center;
     .icon {
-      width: 60px;
-      height: 60px;
+      width: 61px;
+      height: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url('../../images/sprite.png') 0px no-repeat;
-      border-radius: 60px;
+      background: url('../../images/sprite.png') 0px -209px no-repeat;
+      transition: all .2s;
+    }
+
+    &:hover {
+      .icon {
+        background-position: -60px -209px;
+      }
     }
     .title {
       margin: 15px 0;
@@ -123,7 +129,9 @@
       align-items: center;
       justify-content: center;
       font-size: 40px;
-      color: #fff;
+      a {
+        color: #fff;
+      }
     }
     .h4 {
       text-transform: uppercase;
