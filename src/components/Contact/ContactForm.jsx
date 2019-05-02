@@ -3,11 +3,9 @@ import { Field, reduxForm } from 'redux-form'
 import Buttons from '../Buttons/Buttons'
 import styles from './Contact.scss'
 
-
- let ContactForm = props => {
+let ContactForm = props => {
   const { handleSubmit } = props
 
-  // Escreva o motivo do contato
   return (
     <form onSubmit={handleSubmit}>
       <div className={styles.textField}>
