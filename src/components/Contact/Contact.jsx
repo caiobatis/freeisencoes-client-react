@@ -7,6 +7,16 @@ import ContactForm from '../Contact/ContactForm'
 import styles from './Contact.scss'
 
 class Contact extends Component {
+  constructor (props) {
+    super(props)
+
+    this.submit = this.submit.bind(this)
+  }
+
+  submit = values => {
+    this.props.sendContact(values)
+  }
+
   render() {
     return (
       <section className={styles.contact}>

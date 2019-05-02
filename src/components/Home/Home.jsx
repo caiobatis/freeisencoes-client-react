@@ -16,12 +16,6 @@ import styles from './Home.scss'
 
 
 class Routes extends Component {
-  
-  
-  submit = values => {
-    console.log(values)
-  }
-
   render() {
 
     const settings = {

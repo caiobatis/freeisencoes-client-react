@@ -8,7 +8,6 @@ import styles from './Header.scss'
 
 const Header = props => {
 
-
   return (
     <header className={styles.header}>
       <Sticky topOffset={100}>

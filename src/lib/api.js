@@ -7,8 +7,9 @@ const api = axios.create({
 })
 
 export const postContact = values => {
+  console.log(values)
   return new Promise((resolve, reject) => 
-    api.post(`contact`, values)
-    .then((res) => resolve(res))
-    .catch((res) => reject(res)))
+    api.post(`/contact`, values)
+      .then((res) => resolve(res))
+      .catch((res) => reject(res)))
 }

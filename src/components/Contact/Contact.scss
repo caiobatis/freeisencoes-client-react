@@ -13,16 +13,31 @@
     padding: 5px;
     padding-left: 20px;
     position: relative;
-    &:focus ~ label {
+
+
+    & ~ label {
       top: -20px;
       color: #fff;
       font-size: 11px;
     }
-    &:hover ~ label {
+    &[value=""] ~ label {
+      top: 10px;
+      color: #000;
+      font-size: 13px;
+    }
+
+    &[value=""]:focus ~ label {
       top: -20px;
       color: #fff;
       font-size: 11px;
     }
+
+    &[value=""]:hover ~ label {
+      top: -20px !important;
+      color: #fff;
+      font-size: 11px;
+    }
+
   }
   textarea {
     width: 100%;
@@ -33,17 +48,14 @@
     padding: 5px;
     padding-left: 20px;
     position: relative;
+    margin-top: 15px;
 
-    &:focus ~ label {
-      top: -20px;
+    & ~ label {
+      top: -10px;
       color: #fff;
       font-size: 11px;
     }
-    &:hover ~ label {
-      top: -20px;
-      color: #fff;
-      font-size: 11px;
-    }
+
   }
   label {
     position: absolute;

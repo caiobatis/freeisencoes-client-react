@@ -5,9 +5,9 @@ export const startAction = {
   payload: true
 };
 
-export const sendContact = value => {
-  return (dispatch) => {
-    postContact()
+export const sendContact = values => {
+  return dispatch => {
+    postContact(values)
       .then(res => {
         console.log(res)
       })
@@ -16,3 +16,14 @@ export const sendContact = value => {
       })
   }
 }
+// export const getCoins = city => {
+//   return dispatch => {
+//     dispatch(fetchCoins(true))
+//     getProducts(city)
+//     .then((res)=> {
+//       dispatch(fetchCoins(false))
+//       dispatch(receiveCoins(serializeCoins(res.data)))
+//     })
+//     .catch(()=> dispatch(fetchCoins(false)))
+//   }
+// }
