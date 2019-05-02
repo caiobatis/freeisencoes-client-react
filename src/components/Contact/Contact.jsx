@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
+import { bindActionCreators } from 'redux'
 import {
   sendContact
 } from '../../actions/contactActions'
@@ -66,8 +67,10 @@ class Contact extends Component {
 const mapStateToProps = state => ({
   ...state
 })
-const mapDispatchToProps = dispatch => ({
+
+const mapDispatchToProps = dispatch => bindActionCreators({
   sendContact
-})
+}, dispatch)
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Contact);
