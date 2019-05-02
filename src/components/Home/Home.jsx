@@ -73,17 +73,15 @@ class Routes extends Component {
           <section className={styles.aboutUs}>
             <div className="container">
               <div className="row">
-                <div className="col-md-12 text-center">
-                  <h2 className={styles.h2}>Quem somos</h2>
-                </div>
-                <div className="col-md-6">
+                <div className="col-md-5">
                   <div className={styles.logoCenter}>
                     <Logo
                       type={'secundary'}
                     />
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-7">
+                  <h2 className={styles.h2}>Quem somos</h2>
                   <div className={styles.text}>
                     <i>A Free Isenções é uma empresa de Santos, especializada no processo de isenções que conta com uma equipe de atendimento qualificada e empenhada em garantir que os direitos de seus clientes sejam exercidos de acordo com a legislação brasileira.</i> <br/> <br/>
                     <p className={styles.p}>

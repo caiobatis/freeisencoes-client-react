@@ -172,7 +172,13 @@
       flex-direction: column;
       height: 200px;
       justify-content: center;
+      text-align: center;
+      border-right: 1px solid rgba(255, 255, 255, 0.5); 
+      margin: 50px 0;
+      padding: 0 30px;
+
       &:nth-child(1) {
+        border-left: 1px solid rgba(255, 255, 255, 0.5); 
         .icon {
           background-position: 0px -140px;
         }
@@ -196,6 +202,7 @@
         color: #fff;
         margin: 0 0 20px;
         text-transform: uppercase;
+        width: 150px;
       }
       .icon {
         width: 70px;

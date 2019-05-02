@@ -9,6 +9,7 @@ const Buttons = props => {
     [styles.full]: props.full,
     [styles[props.type]]: props.type,
     [styles.clear]: props.clear,
+    [styles.border]: props.border,
     [styles[props.size]]: props.size,
     [styles.uppercase]: props.uppercase,
   })

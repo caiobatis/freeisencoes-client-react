@@ -32,7 +32,7 @@ const Footer = props => {
           </div>
           <div className="col-md-3">
             <ul className={styles.list}>
-              <li><p className={styles.p}>Compre por Whatsapp</p></li>
+              <li><p className={styles.p}>Localização</p></li>
               <li>Av. Senador Feijó, 686 - cj. 615</li>
               <li>The Blue Office Mall Santos,</li>
               <li>São Paulo - CEP: 11015-504</li>
