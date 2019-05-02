@@ -69,6 +69,9 @@
     padding: 30px;
     border-radius: 15px;
     align-items: center;
+    @media(max-width:768px) {
+      margin: 0 0 15px;
+    }
     .icon {
       width: 61px;
       height: 70px;
@@ -78,7 +81,6 @@
       background: url('../../images/sprite.png') 0px -209px no-repeat;
       transition: all .2s;
     }
-
     &:hover {
       .icon {
         background-position: -60px -209px;
@@ -106,6 +108,11 @@
     height: 30px;
     width: 100%;
   }
+  @media(max-width:768px) {
+    .line {
+      display: none; 
+    }
+  }
 }
 
 .socials {
@@ -119,6 +126,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(max-width:768px) {
+      flex-direction: column;
+    }
     .icon {
       width: 70px;
       height: 70px;
@@ -167,6 +177,7 @@
 
     @media(max-width:768px) {
       flex-wrap: wrap;
+      padding: 2em 0;
     }
 
     li {
@@ -182,8 +193,17 @@
       margin: 50px 0;
       padding: 0 30px;
 
+      @media(max-width:768px) {
+        border: 0 !important;
+        border-top: 1px solid #fff !important;
+        margin: 0;
+      }
+
       &:nth-child(1) {
         border-left: 1px solid rgba(255, 255, 255, 0.5); 
+        @media(max-width:768px) {
+          border-top: 0 !important;
+        }
         .icon {
           background-position: 0px -140px;
         }
@@ -360,6 +380,10 @@
     font-weight: 200;
     margin-bottom: 1em;
     text-transform: uppercase;
+    @media(max-width:768px) {
+      text-align: center;
+      margin: 1em 0;
+    }
   }
   .text {
     .p {
@@ -388,6 +412,9 @@
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 1em;
+    @media(max-width:768px) {
+      text-align: center;
+    }
   }
   .items {
     display: flex;
