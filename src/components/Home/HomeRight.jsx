@@ -32,7 +32,6 @@ const HomeRight = props => {
                   <div className={styles.icon}></div>
                 </li>
               </ul>
-
             </div>
           </div>
         </div>

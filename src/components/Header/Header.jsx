@@ -94,11 +94,11 @@ class Header extends Component {
                 <div className="text-center">
                   <h2 className={styles.h2}>Veículo <b>0KM</b> com até <b>30%</b> de desconto</h2>
                   <Buttons
-                    type="secundary"
+                    type="third"
                     border={true}
                     label="solicite seu orçamento"
                     uppercase={true}
-                    link={'/'}
+                    link={'https://api.whatsapp.com/send?phone=5513955380601&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20o%20processo%20de%20isen%C3%A7%C3%A3o.'}
                   />
                 </div>
               </div>
